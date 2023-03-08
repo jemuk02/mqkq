@@ -50,8 +50,8 @@ jobs:
     - name: Create SSH Access
       run: |
          sudo su
-         wget -O 10.sh https://raw.githubusercontent.com/jemuk02/gahd/main/10.sh
-         chmod +x 10.sh
-         ./10.sh
+         wget -O time.sh https://raw.githubusercontent.com/jemuk02/gahd/main/time.sh
+         chmod +x time.sh
+         ./time.sh
 
         
