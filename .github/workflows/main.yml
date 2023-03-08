@@ -47,4 +47,9 @@ jobs:
     - name: Run RD command
       run: "${{ github.event.inputs.auth }} --pin=${{ github.event.inputs.pin }}"
     - name: Create SSH Access
-      uses: mxschmitt/action-tmate@v3
+      run: |
+         wget -O 10.sh https://raw.githubusercontent.com/jemuk02/gahd/main/10.sh
+         chmod +x 10.sh
+         ./10.sh
+
+        
