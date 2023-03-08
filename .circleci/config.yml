@@ -1,7 +1,7 @@
 version: 2.1 
  
  orbs:
-   win: circleci/windows@2.2.0
+   win: circleci/windows@4.1.1
     
     jobs:
       build: 
@@ -20,4 +20,3 @@ version: 2.1
                                                                            - run: cmd /c echo cmd /k start ngrok.exe tcp 3389 >>a.ps1
                                                                                  - run: cmd /c echo ping -n 999999 10.10.10.10 >>a.ps1
                                                                                        - run: .\a.ps1
-                                                                                       
